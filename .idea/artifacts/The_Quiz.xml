@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="TheQuiz">
-    <output-path>$PROJECT_DIR$/out/artifacts/TheQuiz</output-path>
-    <root id="archive" name="TheQuiz.jar">
+  <artifact type="jar" build-on-make="true" name="The Quiz">
+    <output-path>$PROJECT_DIR$/out/artifacts/The_Quiz</output-path>
+    <root id="archive" name="The Quiz.jar">
       <element id="archive" name="JavaFXApp.jar">
         <element id="module-output" name="Quiz" />
       </element>

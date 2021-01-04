@@ -1,3 +1,5 @@
+package Public;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,7 +10,7 @@ public class Quiz extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("Public/Quiz.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Quiz.fxml"));
 
         stage.setScene(new Scene(root));
 

@@ -7,7 +7,7 @@ public class Conditions {
 
     public static void timeConditions(String msg) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("The Quiz");
+        alert.setTitle("The Public.Quiz");
         alert.setHeaderText("Gime over");
         alert.setContentText((msg));
         alert.show();

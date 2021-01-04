@@ -20,10 +20,10 @@ public class Questions {
         //question 2
         HashMap<String, String> question2 = new HashMap<>();
         question2.put("question", "Toutes les classes héritent de la classe ?");
-        question2.put("option_1", "Main");
+        question2.put("option_1", "Public.Main");
         question2.put("option_2", "Object");
         question2.put("option_3", "AWT");
-        question2.put("Anwser", "Main");
+        question2.put("Anwser", "Public.Main");
         questions.add(question2);
         //question 3
         HashMap<String, String> question3 = new HashMap<>();
