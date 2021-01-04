@@ -15,7 +15,7 @@ public class UserChoice extends Questions {
     private static int levell = 1;
     private static int score = 0;
 
-    private Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::handle));
+    private final Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::handle));
 
 
     public RadioButton userChoice_1;
