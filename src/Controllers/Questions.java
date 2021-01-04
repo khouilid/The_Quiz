@@ -114,6 +114,71 @@ public class Questions {
             question5.put("Anwser", "b) this");
             questions.add(question10);
 
+            //question 11
+            HashMap<String, String> question11= new HashMap<>();
+            question7.put("question","calculerSalaire(int)\n" +
+                    "calculerSalaire(int, double)\n" +
+                    "La méthode calculerSalaire est :");
+            question7.put("option_1","a) aucun des choix");
+            question5.put("option_2", "b) surchargée");
+            question5.put("option_3", "c) redéfinie ");
+            question5.put("Anwser", "c) redéfinie");
+            questions.add(question11);
+
+            //question 12
+            HashMap<String, String> question12= new HashMap<>();
+            question7.put("question","Une classe qui contient au moins une méthode\n" +
+                    "abstraite doit être déclarée abstraite.");
+            question7.put("option_1","a) vrai");
+            question5.put("option_2", "b) faux");
+            question5.put("option_3", " ");
+            question5.put("Anwser", "b) faux");
+            questions.add(question12);
+
+
+            //question 13
+            HashMap<String, String> question13= new HashMap<>();
+            question7.put("question","Est-ce qu’une classe peut implémenter plusieurs\n" +
+                    "interfaces ?\n");
+            question7.put("option_1","a) vrai");
+            question5.put("option_2", "b) faux");
+            question5.put("option_3", " ");
+            question5.put("Anwser", "b) faux");
+            questions.add(question13);
+
+            //question 14
+            HashMap<String, String> question14= new HashMap<>();
+            question7.put("question","La déclaration d'une méthode suivante :\n" +
+                    "public void traitement() throws IOException\n" +
+                    "précise que la méthode propage une exception\n" +
+                    "contrôlée");
+            question7.put("option_1","a) vrai");
+            question5.put("option_2", "b) faux");
+            question5.put("option_3", " ");
+            question5.put("Anwser", "b) faux");
+            questions.add(question14);
+
+            //question 15
+            HashMap<String, String> question15= new HashMap<>();
+            question7.put("question","class Test{\n" +
+                    "public static void main (String[] args) {\n" +
+                    "try {\n" +
+                    "int a =10;\n" +
+                    "System.out.println (\"a = \" + a );\n" +
+                    "int b = 0 / a;\n" +
+                    "System.out.println (\"b = \" + b);\n" +
+                    "}\n" +
+                    "catch(ArithmeticException e)\n" +
+                    "{System.out.println (\"diviser par 0!\"); }\n" +
+                    "finally\n" +
+                    "{System.out.println (\"je suis à l’intérieur de\n" +
+                    "finally\");}}}\n");
+            question7.put("option_1","a) aucun des choix");
+            question5.put("option_2", "b) a=10 b=0 Je suis à  l’intérieur de finally");
+            question5.put("option_3", "c) a=10 b=0 diviser par 0! je suis à l’intérieur de finally ");
+            question5.put("Anwser", "b) a=10 b=0 Je suis à  l’intérieur de finally");
+            questions.add(question15);
+
     }
 
     public HashMap<String, String> getQuestions(int id) {
