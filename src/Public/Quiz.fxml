@@ -13,9 +13,9 @@
                 <Font name="SansSerif Regular" size="21.0" />
             </font>
         </Button>
-        <Group  layoutX="248.0" layoutY="379.0">
+        <Group layoutX="248.0" layoutY="379.0">
             <children>
-                <RadioButton fx:id="userChoice_2" layoutY="-40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" text="RadioButton" textFill="WHITE">
+                <RadioButton fx:id="userChoice_2" layoutY="-40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" textFill="WHITE">
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </padding>
@@ -26,7 +26,7 @@
                   <ToggleGroup fx:id="choisess" />
                </toggleGroup>
                 </RadioButton>
-                <RadioButton fx:id="userChoice_1" layoutY="-94.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" text="RadioButton" textFill="WHITE" toggleGroup="$choisess">
+                <RadioButton fx:id="userChoice_1" layoutY="-94.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" textFill="WHITE" toggleGroup="$choisess">
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </padding>
@@ -35,7 +35,7 @@
                     </font>
 
                 </RadioButton>
-                <RadioButton fx:id="userChoice_3" layoutY="11.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" text="RadioButton" textFill="WHITE" toggleGroup="$choisess">
+                <RadioButton fx:id="userChoice_3" layoutY="11.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" selected="true" textFill="WHITE" toggleGroup="$choisess">
                     <padding>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </padding>
@@ -45,7 +45,7 @@
                 </RadioButton>
             </children>
         </Group>
-        <Label fx:id="question" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="101.0" layoutY="188.0" prefHeight="58.0" prefWidth="501.0" text="DMLFKkfdslfjlfksd sdflmkdjfmlksjf ? " textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP" underline="true" wrapText="true">
+        <Label fx:id="question" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="101.0" layoutY="188.0" prefHeight="58.0" prefWidth="501.0" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP" underline="true" wrapText="true">
             <font>
                 <Font name="Ubuntu Mono" size="24.0" />
             </font>
@@ -53,7 +53,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding>
         </Label>
-        <Label layoutX="29.0" layoutY="44.0" prefHeight="34.0" prefWidth="59.0" text="5:00" textFill="WHITE">
+        <Label fx:id="minutes" layoutX="29.0" layoutY="44.0" prefHeight="34.0" prefWidth="23.0" text="4" textFill="WHITE">
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding>
@@ -82,7 +82,23 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Label fx:id="scor"  layoutX="587.0" layoutY="45.0" prefHeight="34.0" prefWidth="75.0" text="000" textFill="WHITE">
+      <Label fx:id="scor" layoutX="587.0" layoutY="45.0" prefHeight="34.0" prefWidth="75.0" text="0" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="44.0" prefHeight="34.0" prefWidth="23.0" text=":" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="scends" layoutX="56.0" layoutY="44.0" prefHeight="34.0" prefWidth="36.0" text="59" textFill="WHITE">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>

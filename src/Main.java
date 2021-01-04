@@ -1,5 +1,7 @@
 import javafx.application.Application;
 
+//import static Controllers.UserChoice.times;
+
 public class Main {
 
 
@@ -7,6 +9,9 @@ public class Main {
 
 
         Application.launch(Quiz.class, args);
+
+//        times();
+
 
     }
 }

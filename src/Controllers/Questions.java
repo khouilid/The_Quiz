@@ -48,6 +48,7 @@ public class Questions {
         question5.put("option_2", "Classe parent");
         question5.put("option_3", "Package gfc");
         question5.put("Anwser", "blajdhs");
+
         questions.add(question5);
 
 
@@ -60,10 +61,7 @@ public class Questions {
 
     public boolean checkAnwser(String anwser, int id) {
 
-        if (questions.get(id).get("Anwser").equals(anwser)) {
-            return true;
-        }
-        return false;
+        return questions.get(id).get("Anwser").equals(anwser);
     }
 
 
