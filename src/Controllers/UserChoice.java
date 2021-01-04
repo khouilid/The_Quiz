@@ -14,7 +14,7 @@ public class UserChoice extends Questions {
     private Timeline timeline;
     private static int questioID = 0;
     private static int levell = 1;
-    private static int score = -20;
+    private static int score = 0;
     public RadioButton userChoice_1;
     public RadioButton userChoice_2;
     public RadioButton userChoice_3;
