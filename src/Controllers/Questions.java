@@ -11,43 +11,44 @@ public class Questions {
     public Questions() {
         //question 1
         HashMap<String, String> question1 = new HashMap<>();
-        question1.put("question", "1 + 1?");
-        question1.put("option_1", "3");
-        question1.put("option_2", "4");
-        question1.put("option_3", "2");
-        question1.put("Anwser", "2");
+        question1.put("question", "JAVA est un langage  ?");
+        question1.put("option_1", "Compilé ");
+        question1.put("option_2", "Interprété");
+        question1.put("option_3", "Compilé et interpreté");
+        question1.put("Anwser", "Compilé");
         questions.add(question1);
         //question 2
         HashMap<String, String> question2 = new HashMap<>();
-        question2.put("question", "2 + 2 * 4 ?");
-        question2.put("option_1", "8");
-        question2.put("option_2", "10");
-        question2.put("option_3", "6");
-        question2.put("Anwser", "10");
+        question2.put("question", "Toutes les classes héritent de la classe ?");
+        question2.put("option_1", "Main");
+        question2.put("option_2", "Object");
+        question2.put("option_3", "AWT");
+        question2.put("Anwser", "Main");
         questions.add(question2);
         //question 3
         HashMap<String, String> question3 = new HashMap<>();
-        question3.put("question", "3 + 3 / 1 ?");
-        question3.put("option_1", "6");
-        question3.put("option_2", "9");
-        question3.put("option_3", "3");
-        question3.put("Anwser", "6");
+        question3.put("question", "Par convention une classe ?");
+        question3.put("option_1", "est en minuscule");
+        question3.put("option_2", "commence par une majuscule");
+        question3.put("option_3", "est en majuscules");
+        question3.put("Anwser", "commence par une majuscule");
         questions.add(question3);
         //question 4
         HashMap<String, String> question4 = new HashMap<>();
-        question4.put("question", "4 + 2 ?");
-        question4.put("option_1", "5");
-        question4.put("option_2", "6");
-        question4.put("option_3", "3");
-        question4.put("Anwser", "6");
+        question4.put("question", "Est-ce que on peut avoir plusieurs constructeurs pour la même classe ?");
+        question4.put("option_1", "oui");
+        question4.put("option_2", "non");
+        question4.put("option_3", "");
+        question4.put("Anwser", "oui");
         questions.add(question4);
         //question 5
         HashMap<String, String> question5 = new HashMap<>();
-        question5.put("question", "5 - 3 * 2 ?");
-        question5.put("option_1", "-1");
-        question5.put("option_2", "1");
-        question5.put("option_3", "0");
-        question5.put("Anwser", "-1");
+        question5.put("question", "Dans la ligne \"public class A implements B\", B est :\n ?");
+        question5.put("option_1", "Interfacce");
+        question5.put("option_2", "Classe parent");
+        question5.put("option_3", "Package gfc");
+        question5.put("Anwser", "blajdhs");
+
         questions.add(question5);
 
 

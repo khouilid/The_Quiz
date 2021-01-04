@@ -14,7 +14,7 @@ public class UserChoice extends Questions {
     private Timeline timeline;
     private static int questioID = 0;
     private static int levell = 1;
-    private static int score = -20;
+    private static int score = 00;
     public RadioButton userChoice_1;
     public RadioButton userChoice_2;
     public RadioButton userChoice_3;
@@ -30,8 +30,6 @@ public class UserChoice extends Questions {
     public UserChoice() {
         super();
         times();
-
-
     }
 
     public void getUserChoice(MouseEvent mouseEvent) {
@@ -44,9 +42,13 @@ public class UserChoice extends Questions {
 
         questioID++;
         if (questioID == 5) {
+            Conditions.levelConditions(score, levell);
+            System.out.println(score + ":" + levell);
             questioID = 0;
             levell++;
         }
+
+
 
     }
 
@@ -72,12 +74,9 @@ public class UserChoice extends Questions {
     private void getAnwser() {
         RadioButton reponse = (RadioButton) choisess.getSelectedToggle();
         String reponseText = reponse.getText();
-        System.out.println(reponseText);
 
         if (checkAnwser(reponseText, questioID)) {
             score += 20;
-        } else {
-            System.out.println("u lose");
         }
         scor.setText(Integer.toString(score));
     }
@@ -103,7 +102,7 @@ public class UserChoice extends Questions {
 
         scends.setText(String.valueOf(sc));
         minutes.setText(String.valueOf(min));
-
-
     }
+
+
 }
