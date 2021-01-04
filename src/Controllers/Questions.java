@@ -152,7 +152,7 @@ public class Questions {
                     "public void traitement() throws IOException\n" +
                     "précise que la méthode propage une exception\n" +
                     "contrôlée");
-            question7.put("option_1","a) vrai");
+            question7.put("option_1","<html>a) vrai</html>");
             question5.put("option_2", "b) faux");
             question5.put("option_3", " ");
             question5.put("Anwser", "b) faux");

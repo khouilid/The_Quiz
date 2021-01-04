@@ -11,14 +11,13 @@ import javafx.util.Duration;
 public class UserChoice extends Questions {
     private static int min = 4;
     private static int sc = 59;
-    private Timeline timeline;
     private static int questioID = 0;
     private static int levell = 1;
-<<<<<<< HEAD
-    private static int score = 00;
-=======
     private static int score = 0;
->>>>>>> 112fdffc1cd5d8f27fc31aa54d2d0490159c3f1e
+
+    private Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::handle));
+
+
     public RadioButton userChoice_1;
     public RadioButton userChoice_2;
     public RadioButton userChoice_3;
@@ -30,15 +29,13 @@ public class UserChoice extends Questions {
     public Label scends;
     public Label minutes;
 
-
     public UserChoice() {
         super();
-        times();
     }
 
     public void getUserChoice(MouseEvent mouseEvent) {
 
-
+        times();
         levels.setText(Integer.toString(levell));
         dispalyQuestion();
         getAnwser();
@@ -51,20 +48,12 @@ public class UserChoice extends Questions {
             questioID = 0;
             levell++;
         }
-
-
-
     }
-
-
     public void times() {
-
-        timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::handle));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
 
     }
-
 
     private void dispalyQuestion() {
         question.setText(getQuestions(questioID).get("question"));
@@ -73,7 +62,6 @@ public class UserChoice extends Questions {
         userChoice_2.setText(getQuestions(questioID).get("option_2"));
         btn.setText("Next");
     }
-
 
     private void getAnwser() {
         RadioButton reponse = (RadioButton) choisess.getSelectedToggle();
@@ -85,28 +73,19 @@ public class UserChoice extends Questions {
         scor.setText(Integer.toString(score));
     }
 
-
     private void handle(ActionEvent ev) {
-
         if (sc == 0) {
             if (min == 0) {
-
-                Conditions.timeConditions();
+                Conditions.timeConditions("You lose!");
                 this.timeline.stop();
-
             } else {
                 min--;
                 sc = 59;
             }
-
         } else {
             sc--;
         }
-
-
         scends.setText(String.valueOf(sc));
         minutes.setText(String.valueOf(min));
     }
-
-
 }
