@@ -4,6 +4,9 @@
     <root id="archive" name="The Quiz.jar">
       <element id="archive" name="JavaFXApp.jar">
         <element id="module-output" name="Quiz" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/Public/META-INF/MANIFEST.MF" />
+        </element>
       </element>
     </root>
   </artifact>
