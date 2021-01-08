@@ -6,6 +6,7 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class UserChoice extends Questions {
@@ -28,6 +29,11 @@ public class UserChoice extends Questions {
     public Label scor;
     public Label scends;
     public Label minutes;
+    private static Stage stage;
+
+    public static void closeit(Stage stage){
+        UserChoice.stage = stage ;
+    }
 
     public UserChoice() {
         super();
@@ -43,7 +49,7 @@ public class UserChoice extends Questions {
 
         questioID++;
         if (questioID == 5) {
-            Conditions.levelConditions(score, levell);
+            Conditions.levelConditions(score, levell , this.stage);
             System.out.println(score + ":" + levell);
             questioID = 0;
             levell++;
@@ -76,7 +82,7 @@ public class UserChoice extends Questions {
     private void handle(ActionEvent ev) {
         if (sc == 0) {
             if (min == 0) {
-                Conditions.timeConditions("You lose!");
+                Conditions.timeConditions("You lose!", stage);
                 this.timeline.stop();
             } else {
                 min--;

@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="Quiz">
+  <artifact type="jar" build-on-make="true" name="Quiz">
     <output-path>$PROJECT_DIR$/out/artifacts/Quiz</output-path>
     <root id="archive" name="Quiz.jar">
       <element id="archive" name="JavaFXApp.jar">
